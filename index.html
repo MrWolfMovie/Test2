@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Website</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #222;
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: url('https://picsum.photos/1200/700') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 50px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Cards */
+.section {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div><b>MySite</b></div>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+    <div>
+        <h1>The Future of Work</h1>
+        <p>Create your website easily</p>
+        <button class="btn">Get Started</button>
+    </div>
+</div>
+
+<!-- Cards Section -->
+<div class="section">
+    <h2>Our Features</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/300/200">
+            <h3>Fast</h3>
+            <p>Super fast loading website</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/301/200">
+            <h3>Responsive</h3>
+            <p>Mobile friendly design</p>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/302/200">
+            <h3>Modern</h3>
+            <p>Clean and modern UI</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    © 2026 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>
