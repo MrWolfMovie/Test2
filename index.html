@@ -1,54 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Modern Website</title>
+<title>Pro Website</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 15px 40px;
-    background: #222;
+    padding: 15px 30px;
+    background: #111;
     color: white;
 }
 
 nav a {
     color: white;
-    margin-left: 20px;
+    margin-left: 15px;
     text-decoration: none;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-    height: 80vh;
-    background: url('https://picsum.photos/1200/700') no-repeat center/cover;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://picsum.photos/1200/700');
+    background-size: cover;
     display: flex;
     align-items: center;
     color: white;
-    padding: 50px;
+    padding: 40px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background: #2ecc71;
-    color: white;
+    padding: 12px 25px;
+    background: #00c896;
     border: none;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-/* Cards */
+/* Sections */
 .section {
     padding: 50px;
     text-align: center;
@@ -62,10 +67,10 @@ nav a {
 }
 
 .card {
-    width: 300px;
+    width: 280px;
     padding: 20px;
-    border: 1px solid #ddd;
     border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
 }
 
 .card img {
@@ -73,12 +78,27 @@ nav a {
     border-radius: 10px;
 }
 
+/* Pricing */
+.pricing {
+    background: #f5f5f5;
+    padding: 50px;
+}
+
+.price-box {
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
 /* Footer */
 footer {
-    background: #333;
+    background: #222;
     color: white;
-    text-align: center;
     padding: 20px;
+    text-align: center;
 }
 </style>
 
@@ -88,7 +108,7 @@ footer {
 
 <!-- Navbar -->
 <nav>
-    <div><b>MySite</b></div>
+    <div><b>MyProSite</b></div>
     <div>
         <a href="#">Home</a>
         <a href="#">Blog</a>
@@ -100,37 +120,65 @@ footer {
 <!-- Hero -->
 <div class="hero">
     <div>
-        <h1>The Future of Work</h1>
-        <p>Create your website easily</p>
-        <button class="btn">Get Started</button>
+        <h1>Future of Work</h1>
+        <p>अपनी वेबसाइट बनाओ और पैसे कमाओ</p>
+        <button class="btn">Start Now</button>
     </div>
 </div>
 
-<!-- Cards Section -->
+<!-- Features -->
 <div class="section">
-    <h2>Our Features</h2>
+    <h2>Features</h2>
     <div class="cards">
         <div class="card">
             <img src="https://picsum.photos/300/200">
             <h3>Fast</h3>
-            <p>Super fast loading website</p>
+            <p>तेज वेबसाइट</p>
         </div>
         <div class="card">
             <img src="https://picsum.photos/301/200">
             <h3>Responsive</h3>
-            <p>Mobile friendly design</p>
+            <p>मोबाइल फ्रेंडली</p>
         </div>
         <div class="card">
             <img src="https://picsum.photos/302/200">
             <h3>Modern</h3>
-            <p>Clean and modern UI</p>
+            <p>क्लीन डिजाइन</p>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing -->
+<div class="pricing">
+    <h2>Pricing</h2>
+    <div class="price-box">
+        <h3>Basic</h3>
+        <p>₹0 / month</p>
+    </div>
+    <div class="price-box">
+        <h3>Pro</h3>
+        <p>₹199 / month</p>
+    </div>
+</div>
+
+<!-- Blog -->
+<div class="section">
+    <h2>Blog</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://picsum.photos/303/200">
+            <h3>Blog 1</h3>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/304/200">
+            <h3>Blog 2</h3>
         </div>
     </div>
 </div>
 
 <!-- Footer -->
 <footer>
-    © 2026 My Website | All Rights Reserved
+    © 2026 MyProSite | All Rights Reserved
 </footer>
 
 </body>
